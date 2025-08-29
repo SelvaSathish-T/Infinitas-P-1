@@ -33,13 +33,13 @@ export default function Navbar() {
         </div>
 
         <div className="navbar-item">
-          <Link href="/case-study">casestudy</Link>
+          <Link href="/CaseStudy">casestudy</Link>
         </div>
 
         <div className="navbar-list">
           <Link href="/">Home</Link>
           <Link href="/About">About</Link>
-          <Link href="/">service</Link>
+          <Link href="/Service">service</Link>
           <Link href="/Industries">industries</Link>
           <Link href="/Team">team</Link>
           <Link href="/Career">careers</Link>

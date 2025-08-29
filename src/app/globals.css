@@ -1223,3 +1223,236 @@ a {
 
 /* Vision & mission */
 /* About us ends */
+
+
+/* Service Page */
+.service-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  padding-top: 100px;
+  gap: 40px;
+  border: 2px solid gray;
+  color: white;
+}
+
+/* Left Side */
+.title-service {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.service-title-box {
+  display: flex;
+  align-items: center;
+}
+
+.service-title {
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: 2px solid gray;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  color: white;
+  background-color: transparent;
+}
+
+.service-title.active {
+  background-color: #ceae95;
+  color: black;
+}
+
+.service-title:hover {
+  background-color: #ceae95;
+  color: black;
+}
+
+.arrow-indicator {
+  background-color: #ceae95;
+  border: 2px solid transparent;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 50px;
+}
+
+.arrow-indicator span {
+  /* font-size: 24px; */
+  font-weight: 600;
+  color: black;
+}
+
+/* Right Side */
+.description-service {
+  width: 75%;
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 10px;
+  border-left: 2px solid gray;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  transition: all 2s ease-in-out;
+}
+
+.description-service::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.service-description-box {
+  margin-bottom: 40px;
+  opacity: 1; /*starts hidden until GSAP animates it */
+  transform: translateY(30px);
+}
+
+.service-heading {
+  margin: 10px;
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.service-content {
+  display: flex;
+  gap: 20px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  height: 350px;
+  align-items: center;
+}
+
+.service-content p {
+  flex: 1;
+  font-size: 24px;
+}
+
+.service-content img {
+  width: 60vh;
+  height: auto;
+  border-radius: 20px;
+}
+
+.know-more-btn {
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.know-more-btn:hover {
+  background-color: var(--background); /* optional hover effect */
+  color: black;
+}
+
+.know-more-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.MuiDialog-paper {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+}
+
+/* Case Study Container */
+.cs-container {
+  width: 100vw;
+}
+
+/* Top Section */
+.cs-top-section {
+  height: 50vh;
+  width: 100%;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem;
+  gap: 20px;
+}
+
+.cs-heading {
+  font-size: 50px;
+  font-weight: 600;
+  color: #ceae95;
+}
+
+.cs-subtext {
+  font-size: 20px;
+  font-weight: 500;
+  color: grey;
+}
+
+/* Horizontal Scroll Section */
+.cs-scroll-section {
+  height: 50vh;
+  width: 100%;
+  border: 1px solid grey;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.cs-scroll-section::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Card */
+.cs-card {
+  border: 1px solid grey;
+  height: 100%;
+  padding: 1rem;
+  width: 400px;
+  color: #ceae95;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cs-card:hover {
+  transform: scale(1.02);
+}
+
+/* Card Header */
+.cs-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cs-card-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.cs-card-name {
+  font-size: 14px;
+}
+
+.cs-card-icon {
+  font-size: 32px;
+  margin-top: 13px;
+}
+
+.cs-card-title {
+  font-size: 52px;
+}
+
+/* Card Description */
+.cs-card-description {
+  font-size: 17px;
+  color: grey;
+  display: flex;
+}
